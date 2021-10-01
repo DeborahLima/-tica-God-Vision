@@ -1,0 +1,123 @@
+body{
+    background-color: #E8F1F2;
+}
+
+@font-face {
+    font-family: Titulo;
+    src: url(../Fontes/Afterglow-Regular.ttf);
+    
+    font-family: Texto;
+    src: url(../Fontes/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+#principal{
+    display: grid;
+    grid-auto-columns: minmax(300px,auto);
+    grid-auto-rows: minmax(100px,auto);
+    column-gap: 20px;
+    row-gap: 50px;
+    grid-template-areas: "topo topo"
+                         "Feminino Masculino"
+                         "promoção promoção"
+                         "consultorio sobre"
+                         "rodape rodape";
+    margin: 10px;
+}
+
+#topo{
+    background-color: #006494;
+    color: #f7fbfc;
+    font-family: Titulo,serif;
+    font-size: 14px;
+    height: 80px;
+    grid-area: topo;
+}
+
+#logo{ 
+    height: 110px;
+    width: 110px;
+    float: left;
+    margin-top: 8px;
+}
+
+#Masculino{
+    height: 180px;
+    background-image: url(../Imagens/Consultorio\ otica.jpg);
+    background-size: cover;
+    box-shadow: black 1px 1px 3px;
+    grid-area: Masculino;
+}
+
+#Feminino{
+    height: 180px;
+    background-image: url(../Imagens/Mulher.jpg);
+    background-size: cover;
+    box-shadow: black 1px 1px 3px;
+    grid-area: Feminino;
+    align-items: center;
+}
+
+#promoção{
+    background-image: url(../Imagens/Promoção.jpg) ;
+    background-size: contain;
+    height:100px;
+    width: 1240px;
+    box-shadow: black 1px 1px 4px;
+    background-repeat:repeat-x;
+    grid-area: promoção;
+}
+
+#consultorio{
+    background-image: url(../Imagens/Consultorio\ otica.jpg);
+    background-size: cover;
+    box-shadow: black 1px 1px 3px;
+    grid-template-rows: 45%;
+    grid-area: consultorio;
+}
+
+#sobre{
+    background-color: #E8F1F2;
+    font-family: Texto, sans-serif;
+    font-size: 13px;
+    padding: 5px;
+    grid-template-rows: 65%;
+    grid-area: sobre;
+}
+
+#rodape{
+    grid-area: rodape;
+    background-color: #006494;
+    display: flex;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav > ul > li{
+    list-style: none;
+    width: 300px;
+    text-align: center;
+}
+
+a{
+    background-color: #006494;
+    color: #f7fbfc;
+    text-decoration: none;
+}
+
+.inicio{
+    margin: 5px;
+    align-items: center;
+}
+
+h2{
+    padding-left: 10px;
+    color:black;
+    font-family: Titulo, serif;
+    font-size: 25px;
+}
+p{
+    font-family: Texto,sans-serif;
+    font-size: 18px;
+}

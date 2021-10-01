@@ -1,0 +1,114 @@
+body{
+    background-color: #E8F1F2;
+}
+
+@font-face {
+    font-family: Titulo;
+    src: url(../Fontes/Afterglow-Regular.ttf);
+    
+    font-family: Texto;
+    src: url(../Fontes/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+#principal{
+    display: grid;
+    grid-auto-columns: minmax(300px,auto);
+    grid-auto-rows: minmax(100px,auto);
+    grid-template-areas: "topo topo"
+                         "img1 img2"
+                         "img3 img5"
+                         "img4 img5"
+                         "rodape rodape";
+    gap: 5;
+}
+
+#topo{
+    background-color: #006494;
+    color: #f7fbfc;
+    font-family: Titulo,serif;
+    font-size: 14px;
+    height: 80px;
+    grid-area: topo;
+}
+
+#logo{ 
+    height: 110px;
+    width: 110px;
+    float: left;
+    margin-top: 8px;
+}
+
+
+#img1{
+    margin: 5px;
+    grid-area: img1;
+    margin-left: 200px;
+    width: 250px;
+    height: 200px;
+    background-image: url(../Imagens/OculosF1.jpg);
+    background-size: 270px;
+}
+#img2{
+    margin: 5px;
+    margin-left: 200px;
+    grid-area: img2;
+    width: 250px;
+    background-image: url(../Imagens/OculosF2.jfif);
+    background-size: cover;
+}
+#img3{
+    margin: 5px;
+    margin-left: 200px;
+    grid-area: img3;
+    width: 250px;
+    height: 200px;
+    background-image: url(../Imagens/OculosF3.jpeg);
+    background-size: 245px;
+}
+
+#img4{
+    margin: 5px;
+    margin-left: 200px;
+    grid-area: img4;
+    width: 250px;
+    height: 200px;
+    background-image: url(../Imagens/OculosF4.jfif);
+    background-position: center ;
+    background-size: 230px;
+    text-align: right;
+}
+#img5{
+    margin: 5px;
+    margin-left: 200px;
+    grid-area: img5;
+    width: 300px;
+    background-image: url(../Imagens/PosterF.jfif);
+    background-size: cover;
+}
+p{
+    text-align:center;
+    font-family: texto;
+}
+
+#rodape{
+    grid-area: rodape;
+    background-color: #006494;
+    display: flex;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav > ul > li{
+    list-style: none;
+    width: 300px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+a{
+    background-color: #006494;
+    color: #f7fbfc;
+    text-decoration: none;
+}

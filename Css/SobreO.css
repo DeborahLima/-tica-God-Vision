@@ -1,0 +1,101 @@
+body{
+    background-color: #E8F1F2;
+}
+
+@font-face {
+    font-family: Titulo;
+    src: url(../Fontes/Afterglow-Regular.ttf);
+    
+    font-family: Texto;
+    src: url(../Fontes/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+#principal{
+    display: grid;
+    grid-auto-columns: minmax(300px,auto);
+    grid-auto-rows: minmax(100px,auto);
+    column-gap: 20px;
+    grid-template-areas: "topo topo"
+                         "corpo corpo"
+                         "rodape rodape";
+    margin: 10px;
+}
+
+#topo{
+    background-color: #006494;
+    color: #f7fbfc;
+    font-family: Titulo,serif;
+    font-size: 14px;
+    height: 80px;
+    grid-area: topo;
+}
+
+#logo{ 
+    height: 110px;
+    width: 110px;
+    float: left;
+    margin-top: 8px;
+}
+
+h2{
+    background-color: #13293D;
+    color: white;
+    font-family: Titulo,serif;
+    font-size: 50px;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+    margin-bottom: 25px;
+}
+
+p{
+    color:#13293D;
+    font-family: Texto,sans-serif;
+    padding: 5px;
+    text-align: justify;
+    font-size: 35px;
+    margin: 5px;
+}
+
+img{
+    width: 300px;
+    height: 250px;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    float:left;
+}
+
+#corpo{
+    background-color: white;
+    box-shadow: #13293D 1px 1px 4px;
+    grid-area: corpo;
+    margin-bottom: 60px;
+    height: 600px;
+    border-radius: 10px ;
+}
+
+#rodape{
+    grid-area: rodape;
+    background-color: #006494;
+    display: flex;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav > ul > li{
+    list-style: none;
+    width: 300px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+a{
+    background-color: #006494;
+    color: #f7fbfc;
+    text-decoration: none;
+}
+

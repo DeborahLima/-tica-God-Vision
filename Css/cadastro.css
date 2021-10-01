@@ -1,0 +1,111 @@
+body{
+    background-color: #E8F1F2;
+}
+
+@font-face {
+    font-family: Titulo;
+    src: url(../Fontes/Afterglow-Regular.ttf);
+    
+    font-family: Texto;
+    src: url(../Fontes/Louis\ George\ Cafe\ Bold.ttf);
+}
+
+#principal{
+    display: grid;
+    grid-template-areas: "topo topo"
+                         "meio meio"
+                         "rodape rodape";
+    grid-auto-rows: minmax(300px,auto);
+    grid-auto-columns: (300px,auto);
+    gap: 5px;
+}
+
+#topo{
+    background-color: #006494;
+    color: #f7fbfc;
+    font-family: Titulo,serif;
+    font-size: 14px;
+    height: 80px;
+    grid-area: topo;
+}
+
+.cadastrar form{
+    grid-area: meio;
+    margin: 15px auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.formulario{
+    margin: 10px auto;
+    width: 50%;
+    padding: 5px;
+}
+
+.formulario input[placeholder]{
+    font-family: texto;
+    font-size: 18px;
+}
+
+#formulariosexo{
+    margin: 10px auto;
+    width: 50%;
+}
+
+.envio{
+    margin: 10px auto;
+    padding: 5px;
+    width: 50%;
+    margin-left:550px;
+}
+
+.envio2{
+    background-color: #006494;
+    color: #f7fbfc;
+    border-radius: 10px;
+    font-family: texto;
+    height: 50px;
+}
+
+.formulario input{
+    width: 100%;
+}
+
+#logo{ 
+    height: 110px;
+    width: 110px;
+    float: left;
+    margin-top: 8px;
+}
+
+#rodape{
+    grid-area: rodape;
+    background-color: #006494;
+    display: flex;
+    height: 90px;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav > ul > li{
+    list-style: none;
+    width: 300px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+a{
+    background-color: #006494;
+    color: #f7fbfc;
+    text-decoration: none;
+}
+
+h2{
+    background-color: #006494;
+    color: #f7fbfc;
+    padding: 5px;
+    text-align: center;
+    min-width:96vw;
+}
